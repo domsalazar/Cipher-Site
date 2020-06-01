@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cipher Rules</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      body {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 500px) {
+        div {
+          padding-left: 15%;
+          padding-right: 15%;
+        }
+      }
+
+      @media screen and (min-width: 500px) {
+        p {
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+      }
+
+      @media screen and (max-width: 499px) {
+        div {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      @media screen and (max-width: 499px) {
+        p {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      h3 {
+        font-weight: bolder;
+      }
+
+      div > p {
+        clear: both;
+      }
+
+      div {
+        padding-bottom: 30px;
+        clear: both;
+      }
+
+      ol, ul, li {
+        text-align: left;
+      }
+
+      p > img {
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <a href="cipher_main.html"><b>Click here to return to deck selection</b></a>
+
+    <h1>Learn the basic rules of Cipher!</h1>
+    <h4>
+      The object of the game is simple: <b>Destroy your opponent's lord.</b>
+    </h4>
+    <p>
+      The game is set out as a war between two players, as they deploy units
+      to destroy the other's army. Each "army" is a deck of 50 cards, with no
+      more than 4 copies of the same card. 
+    </p>
+    <p>
+      Each player starts out by placing one
+      1 cost unit from their deck onto the battlefield in the Vanguard Area.
+      This unit is that player's lord, and is usually marked with another card
+      below it.
+      Each player then shuffles their deck and draws 6 cards. They can then
+      choose to "mulligan", or shuffle their hand back into the deck and redraw
+      the same amount of cards.
+      Player's then decide by their method of choosing which player will
+      go first (ie. R-P-S or coin flip).
+      Once the turn order has been decided, players set aside 5 orbs in the
+      orb area. These orbs represent the amount of times each player's lord
+      can be attacked before defeat, which will be explained in detail
+      <a href="#orb-destroy">later.</a>
+    </p>
+
+    <div>
+      Once setup has been completed play can commence.
+      Each player's turn consists of 5 phases;
+      <ol>
+        <li><a href="#begin">Beginning Phase</a></li>
+        <li><a href="#bond">Bond Phase</a></li>
+        <li><a href="#deploy">Deployment Phase</a></li>
+        <li><a href="#action">Action Phase</a></li>
+        <li><a href="#end">End Phase</a></li>
+      </ol>
+    </div>
+
+    <div>
+      Here is a reference to what the set up should look like
+      <img src="E:\Homework+Assignments\Genealogy\Playmat.jpg" width=80%>
+    </div>
+    <div id=begin>
+      <h3>Beginning Phase</h3>
+      In the Beginning phase, players do the following:
+      <ul>
+        <li>Activate any skills which text say "at the start of your turn"</li>
+        <li>Untap all units</li>
+        <li>Draw one card</li>
+      </ul>
+    </div>
+
+    <div id=bond>
+      <h3>Bond Phase</h3>
+      The Bond phase is where players can choose one card in their hand and
+      place it face up in the bond area. Players may only play one bond
+      per turn.
+    </div>
+
+    <div id=deploy>
+      <h3>Deployment Phase</h3>
+      In the Deployment phase, players can tap any number of bonds to deploy a
+      unit from their hand. A player may also class change a unit they have on
+      the field by tapping a number of bonds equal to the class change cost.
+      A unit cannot be deployed if there is already a unit with the same name
+      as that unit on that player's side of the field.
+      At least one bond tapped must be the same color as the unit being
+      deployed or class changed. Flipped bond cards have no color associated.
+
+      <p>
+        The Deployment cost is listed in the colored, larger bubble and the
+        class change cost is listed below in a smaller orb. When a unit is
+        class changed, the player taps the required bonds, stacks the new card
+        on top of the unit being class changed, and draws one card. The class
+        changed unit must have the same name as the original unit (ie Byleth(f)
+        cannot be class changed into Byleth(M)).
+      </p>
+
+      <p>
+        <img src="E:\Homework+Assignments\ThreeHouses\Byleth5.png" width=200px>
+          The deployment cost of this Byleth(F) is 5, while the class change
+          cost is 4.
+      </p>
+    </div>
+
+    <div id=action>
+      <h3>Action Phase</h3>
+      The action phase covers many options for units. Each unit can activate
+      their skills any number of times (limitted by their card text) as long as
+      the player pays the cost for each skill. Skills can be activated at any
+      point during the action phase.
+
+      <p>
+        During the action phase, each untapped unit can tap to do one of the
+        following:
+        <ul>
+          <li>Move into another area on that player's side of the battle</li>
+          <li>Attack an enemy unit in range</li>
+        </ul>
+      </p>
+
+      <p>
+        <h5 id="orb-destroy">Combat</h5>
+        When an ally attacks an enemy unit, each player flips one card from
+        the top of their deck and places it in the support area. The Support
+        value of the card (located on the bottom right) is added to the attack
+        value of that player's unit's attack (located in the bottom left)
+        in combat. The support skill of the supporting card
+        may activate depending on the conditions of the skill (ie, attacking or
+        defending). If the attacking unit's attack value is
+        higher or equal to the defending's, the defending unit is destoyed and
+        sent to the retreat area. If the defending unit's attack is higher,
+        the fight ends without either unit being destroyed. If the defending
+        unit was the player's lord and the unit is destroyed, that
+        player takes one orb from their orb pile. If the defending player's
+        lord is defeated and has no orbs left, the attacking player wins
+        the game.
+      </p>
+      <p>
+        <img src="E:\Homework+Assignments\Genealogy\Seliph1.png" width=200px>
+        The attack value of this Seliph is 40, and his support value is 20.
+        Seliph also has a support skill that activates when your unit is
+        attacking!
+      </p>
+      <p>
+        <h5>Critical/Evasion</h5>
+        When attacking/defending, player's may discard a card from their hand
+        with the same name as the unit attacking/defending to preform a
+        critical hit or an evasion. If your unit is attacking and you discard a
+        same name card from your hand, your unit preforms a critical hit
+        and their attack value (plus support value) is doubled. If your
+        unit is defending and you discard a same name card from your hand,
+        your unit "evades" the attack and is not destroyed at the end of the
+        combat, regardless of the attack values.
+      </p>
+    </div>
+
+    <div id="end">
+      <h3>End Phase</h3>
+      During the end phase, player's may activate any skills that specify
+      activation during this phase, and play passes to the next player.
+    </div>
+  </body>
+</html>
